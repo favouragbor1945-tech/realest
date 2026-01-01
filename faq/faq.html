@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GeoAI Tutors</title>
+    <link rel="stylesheet" href="../shared/header.css">
+    <link rel="stylesheet" href="../shared/footer.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav-container">
+        <!-- Logo with image -->
+        <a href="/" class="logo">
+            <img src="/image/logo.jpg" alt="GeoAI Tutors Logo" class="logo-image">
+            <span class="logo-text">GeoAI Tutors</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/courses/courses.html">Courses</a></li>
+            <li><a href="/gallery/gallery.html">Gallery</a></li>
+            <li><a href="/liveclass/liveclass.html">Live Class</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+            <li><a href="/faq/faq.html" class="active">FAQ</a></li>
+        </ul>
+        
+        <!-- Right side: Auth buttons and dropdown -->
+        <div class="nav-right">
+            <div class="auth-buttons">
+                <a href="/login/login.html" class="btn btn-primary">Login</a>
+                <a href="/signup/signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+            
+            <!-- Three dots dropdown -->
+            <div class="dropdown-container">
+                <button class="dropdown-toggle">
+                    <span class="dots">•••</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="/about/about.html" class="dropdown-item">
+                        <span class="dropdown-icon">ℹ️</span>
+                        About Us
+                    </a>
+                    <a href="/courses/courses.html" class="dropdown-item">
+                        <span class="dropdown-icon">📚</span>
+                        All Courses
+                    </a>
+                    <a href="/gallery/gallery.html" class="dropdown-item">
+                        <span class="dropdown-icon">🖼️</span>
+                        Student Gallery
+                    </a>
+                    <a href="/liveclass/liveclass.html" class="dropdown-item">
+                        <span class="dropdown-icon">🎥</span>
+                        Live Classes
+                    </a>
+                    <a href="/contact/contact.html" class="dropdown-item">
+                        <span class="dropdown-icon">✉️</span>
+                        Contact
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/login/login.html" class="dropdown-item">
+                        <span class="dropdown-icon">🔐</span>
+                        Login
+                    </a>
+                    <a href="/signup/signup.html" class="dropdown-item">
+                        <span class="dropdown-icon">📝</span>
+                        Sign Up
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/resource/resource.html" class="dropdown-item">
+                        <span class="dropdown-icon">📄</span>
+                        Resources
+                    </a>
+                    <a href="/faq/faq.html" class="dropdown-item active">
+                        <span class="dropdown-icon">❓</span>
+                        FAQ
+                    </a>
+                    <a href="/support/support.html" class="dropdown-item">
+                        <span class="dropdown-icon">🆘</span>
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- HERO SECTION WITH BACKGROUND SLIDER -->
+        <section class="faq-hero">
+            <div class="bg-slider"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Frequently Asked Questions</h1>
+                    <p class="hero-subtitle">Find answers to common questions about courses, enrollment, technical requirements, and more.</p>
+                    
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="faqSearch" placeholder="Search for questions or topics...">
+                            <button class="search-btn">Search</button>
+                        </div>
+                        <div class="search-tips">
+                            <span>Quick tips:</span>
+                            <a href="#enrollment" class="search-tag">Enrollment</a>
+                            <a href="#technical" class="search-tag">Technical</a>
+                            <a href="#payment" class="search-tag">Payment</a>
+                            <a href="#courses" class="search-tag">Courses</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-question-circle"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Questions Answered</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number">24/7</div>
+                                <div class="stat-label">Support Available</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                            <div class="stat-content">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Issue Resolution</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ CONTENT SECTION -->
+        <section class="faq-content">
+            <div class="container">
+                <!-- Quick Navigation -->
+                <div class="quick-nav">
+                    <h2>Quick Navigation</h2>
+                    <div class="nav-cards">
+                        <a href="#enrollment" class="nav-card">
+                            <div class="nav-icon">📝</div>
+                            <h3>Enrollment & Registration</h3>
+                            <p>Course registration, prerequisites, and enrollment process</p>
+                        </a>
+                        <a href="#courses" class="nav-card">
+                            <div class="nav-icon">🎓</div>
+                            <h3>Courses & Curriculum</h3>
+                            <p>Course content, duration, and learning outcomes</p>
+                        </a>
+                        <a href="#technical" class="nav-card">
+                            <div class="nav-icon">💻</div>
+                            <h3>Technical Requirements</h3>
+                            <p>System requirements, software, and tools</p>
+                        </a>
+                        <a href="#payment" class="nav-card">
+                            <div class="nav-icon">💳</div>
+                            <h3>Payment & Pricing</h3>
+                            <p>Payment methods, pricing, and refunds</p>
+                        </a>
+                        <a href="#live-class" class="nav-card">
+                            <div class="nav-icon">🎥</div>
+                            <h3>Live Classes</h3>
+                            <p>Schedule, recordings, and participation</p>
+                        </a>
+                        <a href="#support" class="nav-card">
+                            <div class="nav-icon">🆘</div>
+                            <h3>Support & Resources</h3>
+                            <p>Technical support, resources, and community</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FAQ Categories -->
+                <div class="faq-categories">
+                    <!-- Enrollment Section -->
+                    <div class="faq-section" id="enrollment">
+                        <div class="section-header">
+                            <h2><i class="fas fa-file-alt"></i> Enrollment & Registration</h2>
+                            <p>Questions about course registration, prerequisites, and enrollment process</p>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the prerequisites for enrolling in GeoAI courses?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>For <strong>Level 1 (Fundamentals)</strong>: Basic computer literacy and enthusiasm for geospatial technology. No prior programming experience required.</p>
+                                    <p>For <strong>Level 2 (Machine Learning)</strong>: Completion of Level 1 or equivalent experience with Python basics and GIS concepts.</p>
+                                    <p>For <strong>Level 3 (Advanced)</strong>: Completion of Level 2 or professional experience in geospatial analysis.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Can I enroll in Level 3 directly without completing Level 1 and 2?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>For first-time students, we require enrollment in <strong>Level 1</strong> and <strong>Level 2</strong> as they build foundational skills essential for advanced GeoAI work. However, experienced professionals with proven background in geospatial analysis and machine learning may request exemption through our assessment process.</p>
+                                    <div class="answer-note">
+                                        <strong>Note:</strong> Level 3 can be registered at once with Levels 1 & 2, or separately at a later time if you prefer phased enrollment.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What is the enrollment process and timeline?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>The enrollment process takes 1-3 business days:</p>
+                                    <ol>
+                                        <li><strong>Course Selection</strong>: Choose your courses on the courses page</li>
+                                        <li><strong>Payment</strong>: Complete payment via your preferred method</li>
+                                        <li><strong>Registration</strong>: Receive registration confirmation email</li>
+                                        <li><strong>Onboarding</strong>: Get access to pre-course materials and setup guide</li>
+                                        <li><strong>Start Learning</strong>: Begin classes on the scheduled start date</li>
+                                    </ol>
+                                    <p>You'll receive all login credentials and platform access within 24 hours of payment confirmation.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you offer group or corporate enrollment discounts?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes! We offer special rates for:</p>
+                                    <ul>
+                                        <li><strong>Group Enrollment (3+ students)</strong>: 15% discount on total course fees</li>
+                                        <li><strong>Corporate Teams (5+ students)</strong>: 25% discount + dedicated support</li>
+                                        <li><strong>Educational Institutions</strong>: Custom pricing for universities and research centers</li>
+                                    </ul>
+                                    <p>Contact our corporate team at <a href="mailto:corporate@geoaitutors.com">corporate@geoaitutors.com</a> for custom quotes and dedicated support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Courses Section -->
+                    <div class="faq-section" id="courses">
+                        <div class="section-header">
+                            <h2><i class="fas fa-graduation-cap"></i> Courses & Curriculum</h2>
+                            <p>Questions about course content, duration, and learning outcomes</p>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How long are the courses and what is the time commitment?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="course-durations">
+                                        <div class="duration-card">
+                                            <h4>Level 1: Fundamentals</h4>
+                                            <div class="duration-details">
+                                                <span class="duration-time">20 weeks</span>
+                                                <span class="duration-hours">8-10 hours/week</span>
+                                            </div>
+                                            <p>Total: 160-200 hours</p>
+                                        </div>
+                                        <div class="duration-card">
+                                            <h4>Level 2: Machine Learning</h4>
+                                            <div class="duration-details">
+                                                <span class="duration-time">20 weeks</span>
+                                                <span class="duration-hours">10-12 hours/week</span>
+                                            </div>
+                                            <p>Total: 200-240 hours</p>
+                                        </div>
+                                        <div class="duration-card">
+                                            <h4>Level 3: Advanced</h4>
+                                            <div class="duration-details">
+                                                <span class="duration-time">12 weeks</span>
+                                                <span class="duration-hours">12-15 hours/week</span>
+                                            </div>
+                                            <p>Total: 144-180 hours</p>
+                                        </div>
+                                    </div>
+                                    <p>Each course includes live classes, self-paced learning, hands-on projects, and mentorship sessions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What software and tools will I learn to use?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="tools-grid">
+                                        <div class="tool-category">
+                                            <h4>GIS & Spatial Analysis</h4>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">QGIS</span>
+                                                <span class="tool-tag">ArcGIS Pro</span>
+                                                <span class="tool-tag">PostGIS</span>
+                                                <span class="tool-tag">GDAL</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-category">
+                                            <h4>Programming & ML</h4>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">Python</span>
+                                                <span class="tool-tag">R</span>
+                                                <span class="tool-tag">TensorFlow</span>
+                                                <span class="tool-tag">PyTorch</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-category">
+                                            <h4>Cloud & Big Data</h4>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">Google Earth Engine</span>
+                                                <span class="tool-tag">AWS S3</span>
+                                                <span class="tool-tag">Apache Spark</span>
+                                                <span class="tool-tag">Docker</span>
+                                            </div>
+                                        </div>
+                                        <div class="tool-category">
+                                            <h4>Visualization</h4>
+                                            <div class="tool-tags">
+                                                <span class="tool-tag">Tableau</span>
+                                                <span class="tool-tag">Power BI</span>
+                                                <span class="tool-tag">Mapbox</span>
+                                                <span class="tool-tag">CesiumJS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Will I receive a certificate upon completion?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes! Upon successful completion of each course level, you'll receive:</p>
+                                    <ul>
+                                        <li><strong>Digital Certificate</strong>: Industry-recognized certificate with verification code</li>
+                                        <li><strong>LinkedIn Badge</strong>: Shareable digital badge for your LinkedIn profile</li>
+                                        <li><strong>Project Portfolio</strong>: Access to showcase your completed projects</li>
+                                        <li><strong>Completion Letter</strong>: Detailed letter outlining skills acquired</li>
+                                    </ul>
+                                    <p>Certificates are awarded upon completion of all assignments, projects, and assessment criteria (minimum 80% score).</p>
+                                    <div class="certificate-preview">
+                                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Certificate Preview">
+                                        <p>Sample certificate design</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How are courses structured? Are they self-paced or scheduled?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Our courses follow a hybrid model:</p>
+                                    <div class="structure-grid">
+                                        <div class="structure-card">
+                                            <div class="structure-icon">📅</div>
+                                            <h4>Scheduled Live Classes</h4>
+                                            <p>Weekly interactive sessions with instructors (recorded for later viewing)</p>
+                                        </div>
+                                        <div class="structure-card">
+                                            <div class="structure-icon">📚</div>
+                                            <h4>Self-Paced Learning</h4>
+                                            <p>Video lessons, readings, and exercises available 24/7</p>
+                                        </div>
+                                        <div class="structure-card">
+                                            <div class="structure-icon">👨‍🏫</div>
+                                            <h4>Mentorship Sessions</h4>
+                                            <p>Weekly 1:1 or group sessions with industry mentors</p>
+                                        </div>
+                                        <div class="structure-card">
+                                            <div class="structure-icon">💼</div>
+                                            <h4>Project Work</h4>
+                                            <p>Hands-on projects with real datasets and industry scenarios</p>
+                                        </div>
+                                    </div>
+                                    <p>This structure provides flexibility while maintaining accountability and community engagement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Requirements Section -->
+                    <div class="faq-section" id="technical">
+                        <div class="section-header">
+                            <h2><i class="fas fa-laptop-code"></i> Technical Requirements</h2>
+                            <p>Questions about system requirements, software, and technical setup</p>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What are the minimum system requirements?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="requirements-table">
+                                        <div class="req-category">
+                                            <h4>💻 Hardware Requirements</h4>
+                                            <ul>
+                                                <li><strong>Processor</strong>: Intel i5 or equivalent (i7 recommended for ML)</li>
+                                                <li><strong>RAM</strong>: 8GB minimum (16GB recommended)</li>
+                                                <li><strong>Storage</strong>: 256GB SSD minimum (512GB+ recommended)</li>
+                                                <li><strong>Graphics</strong>: Dedicated GPU with 4GB+ VRAM (recommended for deep learning)</li>
+                                                <li><strong>Internet</strong>: Stable 10+ Mbps connection</li>
+                                            </ul>
+                                        </div>
+                                        <div class="req-category">
+                                            <h4>🖥️ Software Requirements</h4>
+                                            <ul>
+                                                <li><strong>Operating System</strong>: Windows 10/11, macOS 10.14+, or Linux</li>
+                                                <li><strong>Browser</strong>: Chrome 80+, Firefox 75+, or Safari 14+</li>
+                                                <li><strong>Python</strong>: 3.8+ with Anaconda distribution</li>
+                                                <li><strong>QGIS</strong>: Latest LTR version (free download)</li>
+                                                <li><strong>Git</strong>: For version control and collaboration</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="requirement-note">
+                                        <strong>Note:</strong> We provide detailed setup guides and pre-session technical checks to ensure your system is properly configured.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do I need programming experience for GeoAI courses?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p><strong>Level 1 (Fundamentals)</strong>: No prior programming experience required. We start with Python basics and build from there.</p>
+                                    <p><strong>Level 2 (Machine Learning)</strong>: Basic Python knowledge is required (covered in Level 1 or equivalent experience).</p>
+                                    <p><strong>Level 3 (Advanced)</strong>: Intermediate Python and ML knowledge required.</p>
+                                    <div class="prep-resources">
+                                        <h4>Preparation Resources (Free)</h4>
+                                        <ul>
+                                            <li><a href="#">Python Basics for GIS Professionals</a></li>
+                                            <li><a href="#">Getting Started with QGIS</a></li>
+                                            <li><a href="#">Introduction to Spatial Data Concepts</a></li>
+                                            <li><a href="#">Git and GitHub for Beginners</a></li>
+                                        </ul>
+                                        <p>These resources are provided upon enrollment to help you prepare.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Can I use a Mac/Linux computer for the courses?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Absolutely! Our courses are platform-agnostic:</p>
+                                    <div class="platform-compatibility">
+                                        <div class="platform-card">
+                                            <div class="platform-icon">🍎</div>
+                                            <h4>macOS</h4>
+                                            <p>Full compatibility with all tools. Some GIS software may have Mac-specific instructions.</p>
+                                            <span class="compatibility-badge compatible">Fully Compatible</span>
+                                        </div>
+                                        <div class="platform-card">
+                                            <div class="platform-icon">🐧</div>
+                                            <h4>Linux</h4>
+                                            <p>Excellent compatibility, especially for Python development and ML workflows.</p>
+                                            <span class="compatibility-badge compatible">Fully Compatible</span>
+                                        </div>
+                                        <div class="platform-card">
+                                            <div class="platform-icon">🪟</div>
+                                            <h4>Windows</h4>
+                                            <p>Full compatibility with all software and tools used in the courses.</p>
+                                            <span class="compatibility-badge compatible">Fully Compatible</span>
+                                        </div>
+                                    </div>
+                                    <p>We provide setup guides for all major operating systems.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What if I encounter technical issues during the course?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="support-channels">
+                                        <div class="support-channel">
+                                            <div class="channel-icon">💬</div>
+                                            <h4>24/7 Chat Support</h4>
+                                            <p>Instant help via our dedicated support chat</p>
+                                            <span class="response-time">Response time: < 15 minutes</span>
+                                        </div>
+                                        <div class="support-channel">
+                                            <div class="channel-icon">📧</div>
+                                            <h4>Email Support</h4>
+                                            <p>Detailed technical assistance via email</p>
+                                            <span class="response-time">Response time: < 4 hours</span>
+                                        </div>
+                                        <div class="support-channel">
+                                            <div class="channel-icon">👨‍💻</div>
+                                            <h4>Live Screen Sharing</h4>
+                                            <p>Direct troubleshooting with our tech team</p>
+                                            <span class="response-time">Available during business hours CET</span>
+                                        </div>
+                                        <div class="support-channel">
+                                            <div class="channel-icon">📚</div>
+                                            <h4>Knowledge Base</h4>
+                                            <p>Searchable database of common issues and solutions</p>
+                                            <span class="response-time">Instant access 24/7</span>
+                                        </div>
+                                    </div>
+                                    <p>We also offer pre-course technical checks to prevent issues before they occur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="faq-section" id="payment">
+                        <div class="section-header">
+                            <h2><i class="fas fa-credit-card"></i> Payment & Pricing</h2>
+                            <p>Questions about payment methods, pricing, and refund policies</p>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What payment methods do you accept?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="payment-methods">
+                                        <div class="payment-category">
+                                            <h4>💳 Credit/Debit Cards</h4>
+                                            <div class="payment-icons">
+                                                <span class="payment-icon visa">Visa</span>
+                                                <span class="payment-icon mastercard">MasterCard</span>
+                                                <span class="payment-icon amex">Amex</span>
+                                            </div>
+                                        </div>
+                                        <div class="payment-category">
+                                            <h4>🌐 Digital Wallets</h4>
+                                            <div class="payment-icons">
+                                                <span class="payment-icon paypal">PayPal</span>
+                                                <span class="payment-icon applepay">Apple Pay</span>
+                                                <span class="payment-icon googlepay">Google Pay</span>
+                                            </div>
+                                        </div>
+                                        <div class="payment-category">
+                                            <h4>💱 Cryptocurrency</h4>
+                                            <div class="payment-icons">
+                                                <span class="payment-icon bitcoin">Bitcoin</span>
+                                                <span class="payment-icon ethereum">Ethereum</span>
+                                            </div>
+                                        </div>
+                                        <div class="payment-category">
+                                            <h4>🏦 Bank Transfer</h4>
+                                            <div class="payment-icons">
+                                                <span class="payment-icon wise">Wise</span>
+                                                <span class="payment-icon sepa">SEPA</span>
+                                                <span class="payment-icon swift">SWIFT</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>All payments are processed securely with encryption. You'll receive detailed invoices for all transactions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What is your refund policy?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <div class="refund-policy">
+                                        <div class="refund-tier">
+                                            <div class="refund-header">
+                                                <h4>Full Refund</h4>
+                                                <span class="refund-percent">100%</span>
+                                            </div>
+                                            <p>Available within <strong>14 days</strong> of enrollment if no course materials have been accessed.</p>
+                                        </div>
+                                        <div class="refund-tier">
+                                            <div class="refund-header">
+                                                <h4>Partial Refund</h4>
+                                                <span class="refund-percent">50%</span>
+                                            </div>
+                                            <p>Available within <strong>30 days</strong> if less than 25% of course content has been completed.</p>
+                                        </div>
+                                        <div class="refund-tier">
+                                            <div class="refund-header">
+                                                <h4>Course Transfer</h4>
+                                                <span class="refund-percent">Transfer</span>
+                                            </div>
+                                            <p>Can transfer to another course or defer to a later date at any time.</p>
+                                        </div>
+                                    </div>
+                                    <div class="refund-note">
+                                        <strong>Note:</strong> Refund requests must be submitted via email to <a href="mailto:support@geoaitutors.com">support@geoaitutors.com</a> with your enrollment details. Processing takes 5-10 business days.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you offer payment plans or installments?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, we offer flexible payment options:</p>
+                                    <div class="payment-plans">
+                                        <div class="payment-plan">
+                                            <div class="plan-header">
+                                                <h4>Full Payment</h4>
+                                                <div class="plan-price">Save 10%</div>
+                                            </div>
+                                            <ul>
+                                                <li>Pay entire course fee upfront</li>
+                                                <li>10% discount applied</li>
+                                                <li>Immediate course access</li>
+                                            </ul>
+                                            <div class="plan-badge recommended">Recommended</div>
+                                        </div>
+                                        <div class="payment-plan">
+                                            <div class="plan-header">
+                                                <h4>3-Month Installment</h4>
+                                                <div class="plan-price">Interest-free</div>
+                                            </div>
+                                            <ul>
+                                                <li>3 equal monthly payments</li>
+                                                <li>No interest charges</li>
+                                                <li>Immediate course access</li>
+                                            </ul>
+                                        </div>
+                                        <div class="payment-plan">
+                                            <div class="plan-header">
+                                                <h4>6-Month Installment</h4>
+                                                <div class="plan-price">Small fee</div>
+                                            </div>
+                                            <ul>
+                                                <li>6 monthly payments</li>
+                                                <li>Small administrative fee (2.5%)</li>
+                                                <li>Immediate course access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p>Payment plans can be selected during the checkout process. Contact us for custom payment arrangements.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Are there any hidden fees or additional costs?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p><strong>No hidden fees.</strong> Our course fees include:</p>
+                                    <div class="included-items">
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>All course materials and resources</p>
+                                        </div>
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>Software licenses for educational tools</p>
+                                        </div>
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>Certificate of completion</p>
+                                        </div>
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>Lifetime access to course updates</p>
+                                        </div>
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>Community forum access</p>
+                                        </div>
+                                        <div class="included-card">
+                                            <div class="included-icon">✅</div>
+                                            <p>Career support services</p>
+                                        </div>
+                                    </div>
+                                    <p><strong>Optional additional costs:</strong></p>
+                                    <ul>
+                                        <li>Commercial software licenses (if not using open-source alternatives)</li>
+                                        <li>Hardware upgrades (if your system doesn't meet requirements)</li>
+                                        <li>Optional certification exams (some external certifications may have fees)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Classes Section -->
+                    <div class="faq-section" id="live-class">
+                        <div class="section-header">
+                            <h2><i class="fas fa-video"></i> Live Classes & Recordings</h2>
+                            <p>Questions about live sessions, recordings, and participation</p>
+                        </div>
+                        
+                        <div class="faq-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What happens if I miss a live class?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>All live classes are recorded and available within 1 hour after the session ends. You'll have access to:</p>
+                                    <div class="recording-features">
+                                        <div class="feature-card">
+                                            <div class="feature-icon">🎥</div>
+                                            <h4>Full Recording</h4>
+                                            <p>Complete video and audio of the session</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <div class="feature-icon">📝</div>
+                                            <h4>Transcript</h4>
+                                            <p>Searchable text transcript with timestamps</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <div class="feature-icon">💬</div>
+                                            <h4>Chat Log</h4>
+                                            <p>Full chat history from the live session</p>
+                                        </div>
+                                        <div class="feature-card">
+                                            <div class="feature-icon">📚</div>
+                                            <h4>Resources</h4>
+                                            <p>All materials shared during the session</p>
+                                        </div>
+                                    </div>
+                                    <p>Recordings are available for the duration of your course + 6 months after completion.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What time zone are live classes scheduled in?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Live classes are scheduled in <strong>Central European Time (CET)</strong>, but we offer multiple time options:</p>
+                                    <div class="timezone-options">
+                                        <div class="timezone-option">
+                                            <h4>Primary Schedule</h4>
+                                            <div class="time-slots">
+                                                <div class="time-slot">
+                                                    <span class="slot-day">Weekdays</span>
+                                                    <span class="slot-time">18:00 - 20:00 CET</span>
+                                                </div>
+                                                <div class="time-slot">
+                                                    <span class="slot-day">Saturdays</span>
+                                                    <span class="slot-time">10:00 - 12:00 CET</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="timezone-option">
+                                            <h4>Alternative Times</h4>
+                                            <div class="time-slots">
+                                                <div class="time-slot">
+                                                    <span class="slot-day">Early Morning</span>
+                                                    <span class="slot-time">07:00 - 09:00 CET</span>
+                                                </div>
+                                                <div class="time-slot">
+                                                    <span class="slot-day">Late Evening</span>
+                                                    <span class="slot-time">21:00 - 23:00 CET</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>You can use our <a href="/liveclass/liveclass.html">timezone converter</a> to see class times in your local time.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>How interactive are the live classes?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Our live classes are highly interactive with multiple participation options:</p>
+                                    <div class="interaction-features">
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">🎤</div>
+                                            <h4>Live Q&A</h4>
+                                            <p>Ask questions via voice or chat during sessions</p>
+                                        </div>
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">💻</div>
+                                            <h4>Live Coding</h4>
+                                            <p>Code along with instructors in real-time</p>
+                                        </div>
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">👥</div>
+                                            <h4>Breakout Rooms</h4>
+                                            <p>Small group discussions and collaborations</p>
+                                        </div>
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">📊</div>
+                                            <h4>Live Polls & Surveys</h4>
+                                            <p>Interactive polls to gauge understanding</p>
+                                        </div>
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">🖊️</div>
+                                            <h4>Whiteboard Sessions</h4>
+                                            <p>Collaborative whiteboard for problem-solving</p>
+                                        </div>
+                                        <div class="interaction-card">
+                                            <div class="interaction-icon">🎮</div>
+                                            <h4>Interactive Exercises</h4>
+                                            <p>Hands-on exercises with instant feedback</p>
+                                        </div>
+                                    </div>
+                                    <p>Average class participation rate: 85% of students actively engage in each session.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Still Have Questions Section -->
+                <div class="contact-cta">
+                    <div class="cta-content">
+                        <h2>Still Have Questions?</h2>
+                        <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                        
+                        <div class="contact-options">
+                            <div class="contact-option">
+                                <div class="option-icon">📧</div>
+                                <h3>Email Support</h3>
+                                <p>Send us your question and we'll respond within 4 hours</p>
+                                <a href="mailto:support@geoaitutors.com" class="option-link">support@geoaitutors.com</a>
+                            </div>
+                            <div class="contact-option">
+                                <div class="option-icon">💬</div>
+                                <h3>Live Chat</h3>
+                                <p>Chat with our support team in real-time</p>
+                                <button class="option-link chat-trigger">Start Live Chat</button>
+                            </div>
+                            <div class="contact-option">
+                                <div class="option-icon">📞</div>
+                                <h3>Schedule a Call</h3>
+                                <p>Book a 15-minute call with our admissions team</p>
+                                <a href="/contact/contact.html" class="option-link">Schedule Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoAI Tutors</h3>
+                <p>World leading GeoAI education platform</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/courses/courses.html">Courses</a></li>
+                    <li><a href="/contact/contact.html">Contact</a></li>
+                    <li><a href="/faq/faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#technical">Technical Requirements</a></li>
+                    <li><a href="#payment">Payment Information</a></li>
+                    <li><a href="#enrollment">Enrollment Process</a></li>
+                    <li><a href="#courses">Course Details</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> Geoaitutors@outlook.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+                <p><i class="fas fa-clock"></i> CET Timezone</p>
+                <p><i class="fas fa-phone"></i> +49 30 12345678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GeoAI Tutors. All rights reserved. | FAQ Knowledge Base v2.1</p>
+        </div>
+    </footer>
+
+    <!-- Chat Widget (hidden by default) -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <h4><i class="fas fa-headset"></i> GeoAI Support</h4>
+            <button class="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-messages">
+                <div class="chat-message bot">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/shared/navigation.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>

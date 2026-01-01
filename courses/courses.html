@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - GeoAI Tutors</title>
+    <link rel="stylesheet" href="../shared/header.css">
+    <link rel="stylesheet" href="../shared/footer.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav-container">
+        <!-- Logo with image -->
+        <a href="/" class="logo">
+            <img src="/image/logo.jpg" alt="GeoAI Tutors Logo" class="logo-image">
+            <span class="logo-text">GeoAI Tutors</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/courses/courses.html">Courses</a></li>
+            <li><a href="/gallery/gallery.html">Gallery</a></li>
+            <li><a href="/liveclass/liveclass.html">Live Class</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+        
+        <!-- Right side: Auth buttons and dropdown -->
+        <div class="nav-right">
+            <div class="auth-buttons">
+                <a href="/login/login.html" class="btn btn-primary">Login</a>
+                <a href="/signup/signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+            
+            <!-- Three dots dropdown -->
+            <div class="dropdown-container">
+                <button class="dropdown-toggle">
+                    <span class="dots">•••</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="/about/about.html" class="dropdown-item">
+                        <span class="dropdown-icon">ℹ️</span>
+                        About Us
+                    </a>
+                    <a href="/courses/courses.html" class="dropdown-item">
+                        <span class="dropdown-icon">📚</span>
+                        All Courses
+                    </a>
+                    <a href="/gallery/gallery.html" class="dropdown-item">
+                        <span class="dropdown-icon">🖼️</span>
+                        Student Gallery
+                    </a>
+                    <a href="/liveclass/liveclass.html" class="dropdown-item">
+                        <span class="dropdown-icon">🎥</span>
+                        Live Classes
+                    </a>
+                    <a href="/contact/contact.html" class="dropdown-item">
+                        <span class="dropdown-icon">✉️</span>
+                        Contact
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/login/login.html" class="dropdown-item">
+                        <span class="dropdown-icon">🔐</span>
+                        Login
+                    </a>
+                    <a href="/signup/signup.html" class="dropdown-item">
+                        <span class="dropdown-icon">📝</span>
+                        Sign Up
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/resource/resource.html" class="dropdown-item">
+                        <span class="dropdown-icon">📄</span>
+                        Resources
+                    </a>
+                    <a href="/faq/faq.html" class="dropdown-item">
+                        <span class="dropdown-icon">❓</span>
+                        FAQ
+                    </a>
+                    <a href="/support/support.html" class="dropdown-item">
+                        <span class="dropdown-icon">🆘</span>
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- PREMIUM HERO SECTION WITH SLIDING BACKGROUND -->
+        <section class="courses-hero">
+            <div class="bg-slider">
+                <!-- Background images will be added by JavaScript -->
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content">
+                <h1>Master GeoAI with Industry-Leading Courses</h1>
+                <p>Comprehensive curriculum designed by industry experts. Transform your career with hands-on GeoAI skills.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">147+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">96%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Industry Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Mentor Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSES CONTENT -->
+        <section class="courses-content">
+            <div class="container">
+                <!-- Courses Introduction -->
+                <div class="courses-intro">
+                    <h2>Comprehensive GeoAI Curriculum</h2>
+                    <p>Start your journey with our structured learning path. All courses include hands-on projects, expert mentorship, and industry-recognized certification.</p>
+                    
+                    <!-- Registration Note -->
+                    <div class="registration-note">
+                        <strong>Important:</strong> First-time students must enroll in <strong>Level 1</strong> and <strong>Level 2</strong>. 
+                        Level 3 can be registered at once as well or separately at a later time, whichever is suitable.
+                    </div>
+                </div>
+
+                <!-- FILTER CONTROLS -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="fundamentals">Fundamentals</button>
+                    <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                    <button class="filter-btn" data-filter="advanced">Advanced</button>
+                    <button class="filter-btn" data-filter="specialization">Specialization</button>
+                </div>
+
+                <!-- MASONRY GRID FOR COURSES -->
+                <div class="masonry-grid">
+                    <!-- Course 1 -->
+                    <div class="masonry-item" data-id="1" data-category="fundamentals">
+                        <img src="https://th.bing.com/th/id/OIP.RG9SNsCHLsbzZltv68u30wHaEO?w=287&h=181&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="GeoAI Fundamentals">
+                        <div class="item-overlay">
+                            <span class="item-category">Level 1</span>
+                            <h3 class="item-title">GeoAI Fundamentals & Core Concepts</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>20 Weeks • Beginner Level</h4>
+                                    <p>Perfect for GIS professionals transitioning to AI</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Master essential GeoAI tools, core concepts, and foundational workflows required by every modern geospatial professional.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">QGIS</span>
+                                <span class="tool-tag">Python Basics</span>
+                                <span class="tool-tag">Spatial Analysis</span>
+                                <span class="tool-tag">Data Visualization</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€969</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">20</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">15</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="1">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="masonry-item" data-id="2" data-category="intermediate">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Machine Learning for Geospatial">
+                        <div class="item-overlay">
+                            <span class="item-category">Level 2</span>
+                            <h3 class="item-title">Machine Learning for Geospatial Applications</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>20 Weeks • Intermediate Level</h4>
+                                    <p>For professionals with basic GeoAI knowledge</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Build, evaluate, and deploy machine learning models designed specifically for geospatial analysis and remote sensing challenges.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">PyTorch</span>
+                                <span class="tool-tag">TensorFlow</span>
+                                <span class="tool-tag">Scikit-learn</span>
+                                <span class="tool-tag">Satellite Data</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€1099</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">20</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">18</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="2">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="masonry-item" data-id="3" data-category="advanced">
+                        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Advanced GeoAI">
+                        <div class="item-overlay">
+                            <span class="item-category">Level 3</span>
+                            <h3 class="item-title">Advanced GeoAI Analysis & Professional Practice</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>12 Weeks • Advanced Level</h4>
+                                    <p>For experienced GeoAI practitioners</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Handle complex datasets, automate analytical workflows, and develop industry-grade GeoAI solutions suitable for real-world deployment.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Deep Learning</span>
+                                <span class="tool-tag">Cloud Computing</span>
+                                <span class="tool-tag">Big Data</span>
+                                <span class="tool-tag">Industry Tools</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€1299</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="3">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="masonry-item" data-id="4" data-category="specialization">
+                        <img src="https://th.bing.com/th/id/OIP.yaTVg0WywMdtWha9HKb5BwHaEZ?w=282&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Urban GeoAI">
+                        <div class="item-overlay">
+                            <span class="item-category">Specialization</span>
+                            <h3 class="item-title">Urban GeoAI & Smart City Analytics</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>8 Weeks • Specialization</h4>
+                                    <p>For smart city and urban planning professionals</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Apply GeoAI techniques to urban planning, traffic management, and smart city development using real urban datasets.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">IoT Integration</span>
+                                <span class="tool-tag">Urban Data</span>
+                                <span class="tool-tag">Traffic Analysis</span>
+                                <span class="tool-tag">3D Modeling</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€899</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="4">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 5 -->
+                    <div class="masonry-item" data-id="5" data-category="specialization">
+                        <img src="https://th.bing.com/th/id/OIP.IHh_0uulpayuzDxjCE2vNAHaEj?w=236&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Climate GeoAI">
+                        <div class="item-overlay">
+                            <span class="item-category">Specialization</span>
+                            <h3 class="item-title">Climate Change & Environmental GeoAI</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>10 Weeks • Specialization</h4>
+                                    <p>For climate researchers and environmental scientists</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Analyze climate patterns, predict environmental changes, and model climate impacts using satellite data and AI models.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Climate Data</span>
+                                <span class="tool-tag">Sentinel Hub</span>
+                                <span class="tool-tag">Predictive Modeling</span>
+                                <span class="tool-tag">Risk Assessment</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€999</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">10</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">10</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="5">Enroll Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course 6 -->
+                    <div class="masonry-item" data-id="6" data-category="specialization">
+                        <img src="https://th.bing.com/th/id/OIP.CsGmocjUSXUCFw1bkLiFpwHaEd?w=258&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Agricultural GeoAI">
+                        <div class="item-overlay">
+                            <span class="item-category">Specialization</span>
+                            <h3 class="item-title">Agricultural GeoAI & Precision Farming</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>8 Weeks • Specialization</h4>
+                                    <p>For agriculture and precision farming professionals</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Optimize crop yields, monitor soil health, and implement precision agriculture techniques using drone and satellite data.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Drone Data</span>
+                                <span class="tool-tag">NDVI Analysis</span>
+                                <span class="tool-tag">Crop Monitoring</span>
+                                <span class="tool-tag">Yield Prediction</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">€849</span>
+                                    <span class="stat-label">Price</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Weeks</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <button class="enroll-btn cta-button" data-course="6">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COURSES CALL TO ACTION -->
+                <div class="courses-cta">
+                    <h2>Start Your GeoAI Journey Today</h2>
+                    <p>Join thousands of professionals who have transformed their careers with industry-leading GeoAI skills.</p>
+                    <div class="cta-buttons">
+                        <a href="#enrollment" class="cta-button primary">
+                            <span class="icon">🎓</span>
+                            View Course Bundles
+                        </a>
+                        <a href="/contact/contact.html" class="cta-button secondary">
+                            <span class="icon">💬</span>
+                            Schedule Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COURSE BENEFITS SECTION -->
+        <section class="course-benefits">
+            <div class="container">
+                <h2>Why Choose Our Courses?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎯</div>
+                        <h3>Industry-Relevant Curriculum</h3>
+                        <p>Courses designed with direct input from leading GeoAI companies and updated quarterly.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👨‍🏫</div>
+                        <h3>Expert Mentorship</h3>
+                        <p>Learn from industry professionals with 10+ years of experience in geospatial AI.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">💼</div>
+                        <h3>Career Support</h3>
+                        <p>Resume review, interview preparation, and job placement assistance included.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📜</div>
+                        <h3>Industry Certification</h3>
+                        <p>Earn recognized certifications that boost your professional credibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Complete Your Enrollment</h2>
+
+            <div class="payment-details">
+                <p>Course: <span id="selectedCourse">Introduction to GeoAI</span></p>
+                <p>Amount: <span id="courseAmount">€969</span></p>
+            </div>
+
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="paymentMethod">Select a Global Payment Method:</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Choose a payment method</option>
+                        <option value="bitcoin">Bitcoin (BTC)</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="stripe">Stripe Card Payment</option>
+                        <option value="wise">Wise (International Transfer)</option>
+                        <option value="applepay">Apple Pay</option>
+                        <option value="googlepay">Google Pay</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="pay-btn cta-button">Proceed to Secure Payment</button>
+            </form>
+
+            <p class="payment-note">You will be redirected to the selected secure payment gateway.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoAI Tutors</h3>
+                <p>World leading GeoAI education platform</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/courses/courses.html">Courses</a></li>
+                    <li><a href="/contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: Geoaitutors@outlook.com</p>
+                <p>Based in Berlin, Germany</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GeoAI Tutors. All rights reserved. | Courses</p>
+        </div>
+    </footer>
+
+    <script src="/shared/navigation.js"></script> 
+    <script src="courses.js"></script>
+</body>
+</html>

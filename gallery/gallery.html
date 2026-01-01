@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Gallery - GeoAI Tutors</title>
+    <link rel="stylesheet" href="../shared/header.css">
+    <link rel="stylesheet" href="../shared/footer.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav-container">
+        <!-- Logo with image -->
+        <a href="/" class="logo">
+            <img src="/image/logo.jpg" alt="GeoAI Tutors Logo" class="logo-image">
+            <span class="logo-text">GeoAI Tutors</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/courses/courses.html">Courses</a></li>
+            <li><a href="/gallery/gallery.html">Gallery</a></li>
+            <li><a href="/liveclass/liveclass.html">Live Class</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+        
+        <!-- Right side: Auth buttons and dropdown -->
+        <div class="nav-right">
+            <div class="auth-buttons">
+                <a href="/login/login.html" class="btn btn-primary">Login</a>
+                <a href="/signup/signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+            
+            <!-- Three dots dropdown -->
+            <div class="dropdown-container">
+                <button class="dropdown-toggle">
+                    <span class="dots">•••</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="/about/about.html" class="dropdown-item">
+                        <span class="dropdown-icon">ℹ️</span>
+                        About Us
+                    </a>
+                    <a href="/courses/courses.html" class="dropdown-item">
+                        <span class="dropdown-icon">📚</span>
+                        All Courses
+                    </a>
+                    <a href="/gallery/gallery.html" class="dropdown-item">
+                        <span class="dropdown-icon">🖼️</span>
+                        Student Gallery
+                    </a>
+                    <a href="/liveclass/liveclass.html" class="dropdown-item">
+                        <span class="dropdown-icon">🎥</span>
+                        Live Classes
+                    </a>
+                    <a href="/contact/contact.html" class="dropdown-item">
+                        <span class="dropdown-icon">✉️</span>
+                        Contact
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/login/login.html" class="dropdown-item">
+                        <span class="dropdown-icon">🔐</span>
+                        Login
+                    </a>
+                    <a href="/signup/signup.html" class="dropdown-item">
+                        <span class="dropdown-icon">📝</span>
+                        Sign Up
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/resource/resource.html" class="dropdown-item">
+                        <span class="dropdown-icon">📄</span>
+                        Resources
+                    </a>
+                    <a href="/faq/faq.html" class="dropdown-item">
+                        <span class="dropdown-icon">❓</span>
+                        FAQ
+                    </a>
+                    <a href="/support/support.html" class="dropdown-item">
+                        <span class="dropdown-icon">🆘</span>
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- PREMIUM HERO SECTION WITH SLIDING BACKGROUND -->
+        <section class="gallery-hero">
+            <div class="bg-slider">
+                <!-- Background images will be added by JavaScript -->
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content">
+                <h1>Student Success Gallery</h1>
+                <p>Real projects. Real results. Real impact. See what our students build with GeoAI skills.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">15,847+</div>
+                        <div class="stat-label">Students Trained</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">9,236+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">84%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">7+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY CONTENT -->
+        <section class="gallery-content">
+            <div class="container">
+                <!-- Gallery Introduction -->
+                <div class="gallery-intro">
+                    <h2>Real Projects, Real Impact</h2>
+                    <p>Explore the incredible work our students create using GeoAI skills. Every project represents real-world applications and tangible results.</p>
+                </div>
+
+                <!-- FILTER CONTROLS -->
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="gis-mapping">GIS & Mapping</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                    <button class="filter-btn" data-filter="remote-sensing">Remote Sensing</button>
+                    <button class="filter-btn" data-filter="data-visualization">Data Visualization</button>
+                    <button class="filter-btn" data-filter="climate-analysis">Climate Analysis</button>
+                </div>
+
+                <!-- MASONRY GRID -->
+                <div class="masonry-grid">
+                    <!-- Item 1 -->
+                    <div class="masonry-item" data-id="1" data-category="gis-mapping">
+                        <img src="https://th.bing.com/th/id/OIP.lzcYLOP0p8AyqUDNCsse3QHaEI?w=317&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Smart City Analysis">
+                        <div class="item-overlay">
+                            <span class="item-category">GIS & Mapping</span>
+                            <h3 class="item-title">Smart City Traffic Analysis</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Anna Müller</h4>
+                                    <p>Advanced GIS & Spatial Analysis</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Real-time traffic flow analysis using machine learning and satellite imagery for urban planning. This project reduced traffic congestion by 35%.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">QGIS</span>
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">TensorFlow</span>
+                                <span class="tool-tag">OpenStreetMap</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">35%</span>
+                                    <span class="stat-label">Efficiency Gain</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">94%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="masonry-item" data-id="2" data-category="machine-learning">
+                        <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crop Yield Prediction">
+                        <div class="item-overlay">
+                            <span class="item-category">Machine Learning</span>
+                            <h3 class="item-title">Crop Yield Prediction Model</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Marco Rossi</h4>
+                                    <p>Machine Learning for Agriculture</p>
+                                </div>
+                            </div>
+                            <p class="item-description">AI model predicting crop yields with 92% accuracy using multispectral drone data. Implemented across 500+ farms in Italy.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">PyTorch</span>
+                                <span class="tool-tag">Pandas</span>
+                                <span class="tool-tag">Scikit-learn</span>
+                                <span class="tool-tag">Drone Data</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">40%</span>
+                                    <span class="stat-label">Yield Improvement</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">92%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="masonry-item" data-id="3" data-category="remote-sensing">
+                        <img src="https://tse1.explicit.bing.net/th/id/OIP.RfJ61QR2dkuT40bUm7fwxwHaFP?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wildfire Risk Assessment">
+                        <div class="item-overlay">
+                            <span class="item-category">Remote Sensing</span>
+                            <h3 class="item-title">Wildfire Risk Assessment</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Sarah Chen</h4>
+                                    <p>Satellite Image Processing</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Early warning system using Sentinel-2 data to predict wildfire risks in Mediterranean regions. Successfully predicted 12 high-risk zones.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Google Earth Engine</span>
+                                <span class="tool-tag">R</span>
+                                <span class="tool-tag">NDVI</span>
+                                <span class="tool-tag">LandSat</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">28%</span>
+                                    <span class="stat-label">Early Detection</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">89%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="masonry-item" data-id="4" data-category="data-visualization">
+                        <img src="https://th.bing.com/th/id/OIP.Rq4q63LZqHE21dCWEFOEaAAAAA?w=177&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Urban Growth Model">
+                        <div class="item-overlay">
+                            <span class="item-category">Data Visualization</span>
+                            <h3 class="item-title">3D Urban Growth Model</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Thomas Weber</h4>
+                                    <p>3D Geospatial Visualization</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Interactive 3D model showing urban expansion patterns over 20 years in Berlin. Used by city planners for sustainable development.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">CesiumJS</span>
+                                <span class="tool-tag">Three.js</span>
+                                <span class="tool-tag">Blender</span>
+                                <span class="tool-tag">PostGIS</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">50%</span>
+                                    <span class="stat-label">Planning Efficiency</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">96%</span>
+                                    <span class="stat-label">Model Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="masonry-item" data-id="5" data-category="climate-analysis">
+                        <img src="https://th.bing.com/th?id=OIF.fu%2fqBTHFznbGBApIsWMEjg&w=245&h=184&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Glacier Retreat Monitoring">
+                        <div class="item-overlay">
+                            <span class="item-category">Climate Analysis</span>
+                            <h3 class="item-title">Glacier Retreat Monitoring</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Elena Petrova</h4>
+                                    <p>Climate Change Analytics</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Multi-decadal analysis of glacier retreat in the Alps using time-series satellite data. Published in Environmental Research Letters.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">GDAL</span>
+                                <span class="tool-tag">MODIS</span>
+                                <span class="tool-tag">Climate Data</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">33%</span>
+                                    <span class="stat-label">Retreat Rate</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">91%</span>
+                                    <span class="stat-label">Data Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="masonry-item" data-id="6" data-category="gis-mapping">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Flood Prediction Dashboard">
+                        <div class="item-overlay">
+                            <span class="item-category">GIS & Mapping</span>
+                            <h3 class="item-title">Flood Prediction Dashboard</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>David Schmidt</h4>
+                                    <p>Real-time GIS Applications</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Live dashboard predicting flood risks using IoT sensors and weather API integration. Currently used by emergency services in 3 countries.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">React</span>
+                                <span class="tool-tag">Mapbox</span>
+                                <span class="tool-tag">IoT Sensors</span>
+                                <span class="tool-tag">Weather API</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">45%</span>
+                                    <span class="stat-label">Early Warning</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="masonry-item" data-id="7" data-category="machine-learning">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Building Footprint Detection">
+                        <div class="item-overlay">
+                            <span class="item-category">Machine Learning</span>
+                            <h3 class="item-title">Building Footprint Detection</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Liam O'Connor</h4>
+                                    <p>Deep Learning for Geospatial</p>
+                                </div>
+                            </div>
+                            <p class="item-description">CNN model automatically detecting building footprints from aerial imagery with 97% accuracy. Processed 50,000+ images for urban planning.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">TensorFlow</span>
+                                <span class="tool-tag">Keras</span>
+                                <span class="tool-tag">OpenCV</span>
+                                <span class="tool-tag">Aerial Imagery</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">60%</span>
+                                    <span class="stat-label">Processing Speed</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">97%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="masonry-item" data-id="8" data-category="remote-sensing">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ocean Plastic Detection">
+                        <div class="item-overlay">
+                            <span class="item-category">Remote Sensing</span>
+                            <h3 class="item-title">Ocean Plastic Detection</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Maria Garcia</h4>
+                                    <p>Marine Geospatial Analytics</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Satellite-based detection of plastic concentrations in ocean gyres using spectral analysis. Contributed to UN Ocean Cleanup Initiative.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">Sentinel-3</span>
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">Hyperspectral</span>
+                                <span class="tool-tag">Marine Data</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">38%</span>
+                                    <span class="stat-label">Detection Rate</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">88%</span>
+                                    <span class="stat-label">Accuracy</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 -->
+                    <div class="masonry-item" data-id="9" data-category="data-visualization">
+                        <img src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Renewable Energy Potential Map">
+                        <div class="item-overlay">
+                            <span class="item-category">Data Visualization</span>
+                            <h3 class="item-title">Renewable Energy Potential Map</h3>
+                            <div class="item-student">
+                                <div class="student-info">
+                                    <h4>Alexandre Dubois</h4>
+                                    <p>Energy GIS Applications</p>
+                                </div>
+                            </div>
+                            <p class="item-description">Interactive map showing solar and wind energy potential across Europe. Used by energy companies for strategic planning.</p>
+                            <div class="item-tools">
+                                <span class="tool-tag">D3.js</span>
+                                <span class="tool-tag">Leaflet</span>
+                                <span class="tool-tag">Energy Data</span>
+                                <span class="tool-tag">WebGL</span>
+                            </div>
+                            <div class="item-stats">
+                                <div class="stat-badge">
+                                    <span class="stat-value">42%</span>
+                                    <span class="stat-label">Planning Accuracy</span>
+                                </div>
+                                <div class="stat-badge">
+                                    <span class="stat-value">93%</span>
+                                    <span class="stat-label">Model Reliability</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GALLERY CALL TO ACTION -->
+                <div class="gallery-cta">
+                    <h2>Ready to Create Your Own Success Story?</h2>
+                    <p>Join hundreds of students who have transformed their careers with GeoAI skills. Start your journey today!</p>
+                    <div class="cta-buttons">
+                        <a href="/courses/courses.html" class="cta-button primary">
+                            <span class="icon">🎓</span>
+                            View All Courses
+                        </a>
+                        <a href="/contact/contact.html" class="cta-button secondary">
+                            <span class="icon">💬</span>
+                            Contact Admissions
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUCCESS STORIES SECTION -->
+        <section class="success-stories">
+            <div class="container">
+                <h2>Student Success Stories</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-quote">"The GeoAI Tutors program transformed my career. Within a year and 6 months, I went from junior analyst to leading a geospatial team."</div>
+                            <div class="story-author">
+                                <h4>Anna Müller</h4>
+                                <p>Senior Geospatial Analyst at Siemens</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-quote">"The hands-on projects gave me real-world experience that directly led to my current role at the European Space Agency."</div>
+                            <div class="story-author">
+                                <h4>Marco Rossi</h4>
+                                <p>Data Scientist at ESA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-card">
+                        <div class="story-content">
+                            <div class="story-quote">"As a climate researcher, the advanced GeoAI skills I learned helped me publish groundbreaking research on glacier retreat."</div>
+                            <div class="story-author">
+                                <h4>Elena Petrova</h4>
+                                <p>Climate Researcher at Max Planck Institute</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoAI Tutors</h3>
+                <p>World leading GeoAI education platform</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/courses/courses.html">Courses</a></li>
+                    <li><a href="/contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Email: Geoaitutors@outlook.com</p>
+                <p>Based in Berlin, Germany</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GeoAI Tutors. All rights reserved. | Student Gallery</p>
+        </div>
+    </footer>
+
+    <script src="/shared/navigation.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

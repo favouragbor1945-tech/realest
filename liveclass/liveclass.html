@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Classes - GeoAI Tutors</title>
+    <link rel="stylesheet" href="../shared/header.css">
+    <link rel="stylesheet" href="../shared/footer.css">
+    <link rel="stylesheet" href="liveclass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav-container">
+        <!-- Logo with image -->
+        <a href="/" class="logo">
+            <img src="/image/logo.jpg" alt="GeoAI Tutors Logo" class="logo-image">
+            <span class="logo-text">GeoAI Tutors</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/courses/courses.html">Courses</a></li>
+            <li><a href="/gallery/gallery.html">Gallery</a></li>
+            <li><a href="/liveclass/liveclass.html">Live Class</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+        </ul>
+        
+        <!-- Right side: Auth buttons and dropdown -->
+        <div class="nav-right">
+            <div class="auth-buttons">
+                <a href="/login/login.html" class="btn btn-primary">Login</a>
+                <a href="/signup/signup.html" class="btn btn-secondary">Sign Up</a>
+            </div>
+            
+            <!-- Three dots dropdown -->
+            <div class="dropdown-container">
+                <button class="dropdown-toggle">
+                    <span class="dots">•••</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a href="/about/about.html" class="dropdown-item">
+                        <span class="dropdown-icon">ℹ️</span>
+                        About Us
+                    </a>
+                    <a href="/courses/courses.html" class="dropdown-item">
+                        <span class="dropdown-icon">📚</span>
+                        All Courses
+                    </a>
+                    <a href="/gallery/gallery.html" class="dropdown-item">
+                        <span class="dropdown-icon">🖼️</span>
+                        Student Gallery
+                    </a>
+                    <a href="/liveclass/liveclass.html" class="dropdown-item">
+                        <span class="dropdown-icon">🎥</span>
+                        Live Classes
+                    </a>
+                    <a href="/contact/contact.html" class="dropdown-item">
+                        <span class="dropdown-icon">✉️</span>
+                        Contact
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/login/login.html" class="dropdown-item">
+                        <span class="dropdown-icon">🔐</span>
+                        Login
+                    </a>
+                    <a href="/signup/signup.html" class="dropdown-item">
+                        <span class="dropdown-icon">📝</span>
+                        Sign Up
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/resource/resource.html" class="dropdown-item">
+                        <span class="dropdown-icon">📄</span>
+                        Resources
+                    </a>
+                    <a href="/faq/faq.html" class="dropdown-item">
+                        <span class="dropdown-icon">❓</span>
+                        FAQ
+                    </a>
+                    <a href="/support/support.html" class="dropdown-item">
+                        <span class="dropdown-icon">🆘</span>
+                        Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <!-- HERO SECTION WITH BACKGROUND SLIDER -->
+        <section class="liveclass-hero">
+            <div class="bg-slider"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Live Interactive GeoAI Classes</h1>
+                    <p class="hero-subtitle">Real-time learning with industry experts. Build, code, and deploy alongside professionals.</p>
+                    
+                    <div class="live-status">
+                        <span class="live-badge">
+                            <i class="fas fa-circle"></i> LIVE NOW
+                        </span>
+                        <span class="viewer-count">
+                            <i class="fas fa-users"></i> 347 students currently online
+                        </span>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#join-class" class="cta-button primary">
+                            <i class="fas fa-video"></i> Join Live Session
+                        </a>
+                        <a href="#schedule" class="cta-button secondary">
+                            <i class="fas fa-calendar-alt"></i> View Schedule
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">94%</div>
+                            <div class="stat-label">Completion Rate</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">156+</div>
+                            <div class="stat-label">Hours Live</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-star"></i></div>
+                        <div class="stat-content">
+                            <div class="stat-number">4.6/5</div>
+                            <div class="stat-label">Student Rating</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE CLASSROOM SECTION -->
+        <section id="join-class" class="live-classroom">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Live Classroom</h2>
+                    <p>Join the current session or explore upcoming classes</p>
+                </div>
+                
+                <div class="classroom-grid">
+                    <!-- Main Video Player -->
+                    <div class="video-main">
+                        <div class="video-container">
+                            <div class="video-player">
+                                <div class="video-placeholder">
+                                    <div class="live-indicator">
+                                        <span class="live-dot"></span>
+                                        LIVE
+                                    </div>
+                                    <img src="https://th.bing.com/th/id/OIP.hox91sU6EdmV6IA07smh0AHaEe?w=256&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Live Class Preview">
+                                    <div class="video-overlay">
+                                        <h3>Advanced Spatial Python: Real-time Analysis</h3>
+                                        <p class="instructor-info">
+                                            <i class="fas fa-user-circle"></i>
+                                            Instructor: Prof. Marco Rossi
+                                        </p>
+                                        <div class="session-stats">
+                                            <span><i class="fas fa-clock"></i> 1:45:32 elapsed</span>
+                                            <span><i class="fas fa-users"></i> 347 attendees</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="video-controls">
+                                <button class="control-btn active">
+                                    <i class="fas fa-video"></i> Video
+                                </button>
+                                <button class="control-btn">
+                                    <i class="fas fa-microphone"></i> Audio
+                                </button>
+                                <button class="control-btn">
+                                    <i class="fas fa-share-alt"></i> Share Screen
+                                </button>
+                                <button class="control-btn danger">
+                                    <i class="fas fa-phone-slash"></i> Leave
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Session Details -->
+                        <div class="session-details">
+                            <h3>Current Session Details</h3>
+                            <div class="details-grid">
+                                <div class="detail-item">
+                                    <i class="fas fa-calendar"></i>
+                                    <div>
+                                        <strong>Date & Time</strong>
+                                        <p>Today, 18:00 - 20:00 CET</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-user-tie"></i>
+                                    <div>
+                                        <strong>Instructor</strong>
+                                        <p>Prof. Marco Rossi</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-book"></i>
+                                    <div>
+                                        <strong>Course</strong>
+                                        <p>Advanced GeoAI Applications</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-download"></i>
+                                    <div>
+                                        <strong>Resources</strong>
+                                        <p><a href="#" class="resource-link">Download Materials</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar with Chat and Participants -->
+                    <div class="classroom-sidebar">
+                        <div class="sidebar-tabs">
+                            <button class="tab-btn active" data-tab="chat">
+                                <i class="fas fa-comments"></i> Live Chat
+                            </button>
+                            <button class="tab-btn" data-tab="participants">
+                                <i class="fas fa-users"></i> Participants
+                            </button>
+                            <button class="tab-btn" data-tab="resources">
+                                <i class="fas fa-folder"></i> Resources
+                            </button>
+                        </div>
+                        
+                        <div class="tab-content active" id="chat-tab">
+                            <div class="chat-messages">
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="message-sender">Sarah Chen</span>
+                                        <span class="message-time">18:05</span>
+                                    </div>
+                                    <div class="message-content">
+                                        Can we export this analysis to QGIS?
+                                    </div>
+                                </div>
+                                <div class="message instructor">
+                                    <div class="message-header">
+                                        <span class="message-sender">Prof. Rossi (Instructor)</span>
+                                        <span class="message-time">18:07</span>
+                                    </div>
+                                    <div class="message-content">
+                                        Yes, we'll cover export options in 10 minutes. The GeoJSON format works best.
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="message-header">
+                                        <span class="message-sender">Thomas Müller</span>
+                                        <span class="message-time">18:10</span>
+                                    </div>
+                                    <div class="message-content">
+                                        What's the recommended hardware for this processing?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" placeholder="Type your message...">
+                                <button class="send-btn">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="participants-tab">
+                            <div class="participants-list">
+                                <div class="participant">
+                                    <div class="participant-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="participant-info">
+                                        <strong>Sarah Chen</strong>
+                                        <span class="participant-status">Student</span>
+                                    </div>
+                                </div>
+                                <div class="participant">
+                                    <div class="participant-avatar instructor">
+                                        <i class="fas fa-user-tie"></i>
+                                    </div>
+                                    <div class="participant-info">
+                                        <strong>Prof. Marco Rossi</strong>
+                                        <span class="participant-status">Instructor</span>
+                                    </div>
+                                </div>
+                                <div class="participant">
+                                    <div class="participant-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="participant-info">
+                                        <strong>Thomas Müller</strong>
+                                        <span class="participant-status">Student</span>
+                                    </div>
+                                </div>
+                                <div class="participant">
+                                    <div class="participant-avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="participant-info">
+                                        <strong>Elena Petrova</strong>
+                                        <span class="participant-status">Student</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-content" id="resources-tab">
+                            <div class="resources-list">
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <div>
+                                        <strong>Session Slides</strong>
+                                        <span>PDF • 4.2 MB</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <strong>Python Notebook</strong>
+                                        <span>Jupyter • 2.1 MB</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="resource-item">
+                                    <i class="fas fa-database"></i>
+                                    <div>
+                                        <strong>Sample Dataset</strong>
+                                        <span>GeoJSON • 8.7 MB</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPCOMING SESSIONS SCHEDULE -->
+        <section id="schedule" class="sessions-schedule">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Upcoming Live Sessions</h2>
+                    <p>Plan your learning journey with our expert-led schedule</p>
+                </div>
+                
+                <div class="timezone-selector">
+                    <label for="timezone">
+                        <i class="fas fa-globe-europe"></i> Your Timezone:
+                    </label>
+                    <select id="timezone">
+                        <option value="CET">Central European Time (CET)</option>
+                        <option value="GMT">Greenwich Mean Time (GMT)</option>
+                        <option value="EST">Eastern Standard Time (EST)</option>
+                        <option value="PST">Pacific Standard Time (PST)</option>
+                    </select>
+                </div>
+                
+                <div class="schedule-grid">
+                    <div class="session-card featured">
+                        <div class="session-header">
+                            <h3>Machine Learning for Geospatial Data</h3>
+                            <span class="session-level">Advanced</span>
+                        </div>
+                        <div class="session-details">
+                            <div class="session-time">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Tomorrow, 17:00 CET</strong>
+                                    <span>2 hours duration</span>
+                                </div>
+                            </div>
+                            <div class="session-instructor">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Instructor</strong>
+                                    <span>Dr. Sarah Chen</span>
+                                </div>
+                            </div>
+                            <div class="session-description">
+                                Learn to implement ML algorithms for satellite imagery analysis and predictive modeling.
+                            </div>
+                            <div class="session-tools">
+                                <span class="tool-tag">Python</span>
+                                <span class="tool-tag">TensorFlow</span>
+                                <span class="tool-tag">QGIS</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-bell"></i> Set Reminder
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-calendar-plus"></i> Add to Calendar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="session-card">
+                        <div class="session-header">
+                            <h3>Real-time GIS Applications</h3>
+                            <span class="session-level">Intermediate</span>
+                        </div>
+                        <div class="session-details">
+                            <div class="session-time">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Friday, 19:00 CET</strong>
+                                    <span>2.5 hours duration</span>
+                                </div>
+                            </div>
+                            <div class="session-instructor">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Instructor</strong>
+                                    <span>Thomas Weber</span>
+                                </div>
+                            </div>
+                            <div class="session-description">
+                                Building interactive dashboards and real-time monitoring systems with GIS data.
+                            </div>
+                            <div class="session-tools">
+                                <span class="tool-tag">React</span>
+                                <span class="tool-tag">Mapbox</span>
+                                <span class="tool-tag">WebSockets</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-bell"></i> Set Reminder
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-calendar-plus"></i> Add to Calendar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="session-card">
+                        <div class="session-header">
+                            <h3>GeoAI Career Workshop</h3>
+                            <span class="session-level">All Levels</span>
+                        </div>
+                        <div class="session-details">
+                            <div class="session-time">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <strong>Monday, 18:30 CET</strong>
+                                    <span>1.5 hours duration</span>
+                                </div>
+                            </div>
+                            <div class="session-instructor">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Instructor</strong>
+                                    <span>Anna Müller (Siemens)</span>
+                                </div>
+                            </div>
+                            <div class="session-description">
+                                Industry insights and career guidance from GeoAI professionals working in major companies.
+                            </div>
+                            <div class="session-tools">
+                                <span class="tool-tag">Career</span>
+                                <span class="tool-tag">Networking</span>
+                                <span class="tool-tag">Interview</span>
+                            </div>
+                        </div>
+                        <div class="session-actions">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-bell"></i> Set Reminder
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-calendar-plus"></i> Add to Calendar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAST RECORDINGS SECTION -->
+        <section class="recordings-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Session Recordings</h2>
+                    <p>Missed a class? Access recordings, materials, and transcripts</p>
+                </div>
+                
+                <div class="recordings-grid">
+                    <div class="recording-card">
+                        <div class="recording-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Recording Thumbnail">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="recording-info">
+                            <h3>Introduction to Spatial Python</h3>
+                            <div class="recording-meta">
+                                <span><i class="fas fa-clock"></i> 2h 15m</span>
+                                <span><i class="fas fa-calendar"></i> Dec 5, 2024</span>
+                                <span><i class="fas fa-eye"></i> 842 views</span>
+                            </div>
+                            <p>Learn the fundamentals of Python for geospatial data processing and analysis.</p>
+                            <div class="recording-actions">
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-play"></i> Watch Recording
+                                </a>
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-download"></i> Download Materials
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recording-card">
+                        <div class="recording-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Recording Thumbnail">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="recording-info">
+                            <h3>Machine Learning for Satellite Imagery</h3>
+                            <div class="recording-meta">
+                                <span><i class="fas fa-clock"></i> 3h 10m</span>
+                                <span><i class="fas fa-calendar"></i> Nov 28, 2024</span>
+                                <span><i class="fas fa-eye"></i> 1,247 views</span>
+                            </div>
+                            <p>Advanced ML techniques for analyzing and classifying satellite data.</p>
+                            <div class="recording-actions">
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-play"></i> Watch Recording
+                                </a>
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-download"></i> Download Materials
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="recording-card">
+                        <div class="recording-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Recording Thumbnail">
+                            <div class="play-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="recording-info">
+                            <h3>Building Interactive GIS Dashboards</h3>
+                            <div class="recording-meta">
+                                <span><i class="fas fa-clock"></i> 2h 45m</span>
+                                <span><i class="fas fa-calendar"></i> Nov 21, 2024</span>
+                                <span><i class="fas fa-eye"></i> 956 views</span>
+                            </div>
+                            <p>Create powerful data visualization dashboards for geospatial analysis.</p>
+                            <div class="recording-actions">
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-play"></i> Watch Recording
+                                </a>
+                                <a href="#" class="action-link">
+                                    <i class="fas fa-download"></i> Download Materials
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNICAL REQUIREMENTS SECTION -->
+        <section class="tech-section">
+            <div class="container">
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>System Requirements</h3>
+                        <ul>
+                            <li>Modern web browser (Chrome 80+, Firefox 75+)</li>
+                            <li>Stable internet connection (5+ Mbps)</li>
+                            <li>Microphone & webcam (recommended)</li>
+                            <li>Python 3.8+ installed (for coding sessions)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Recommended Tools</h3>
+                        <ul>
+                            <li>Jupyter Notebook or VS Code</li>
+                            <li>QGIS or ArcGIS (optional)</li>
+                            <li>PostgreSQL with PostGIS</li>
+                            <li>Git for version control</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-card">
+                        <div class="tech-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Support & Help</h3>
+                        <ul>
+                            <li>Pre-session technical check available</li>
+                            <li>24/7 chat support during sessions</li>
+                            <li>Recordings available 1 hour after session</li>
+                            <li>Dedicated Q&A forum</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GeoAI Tutors</h3>
+                <p>World leading GeoAI education platform</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/about/about.html">About</a></li>
+                    <li><a href="/courses/courses.html">Courses</a></li>
+                    <li><a href="/contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Live Class Info</h4>
+                <ul>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#join-class">Join Now</a></li>
+                    <li><a href="#recordings">Recordings</a></li>
+                    <li><a href="#">Technical Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-envelope"></i> Geoaitutors@outlook.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Berlin, Germany</p>
+                <p><i class="fas fa-clock"></i> CET Timezone</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GeoAI Tutors. All rights reserved. | Live Class Platform v2.0</p>
+        </div>
+    </footer>
+
+    <script src="/shared/navigation.js"></script>
+    <script src="liveclass.js"></script>
+</body>
+</html>
