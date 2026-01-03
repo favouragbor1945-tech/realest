@@ -748,3 +748,52 @@ p {
         justify-content: center;
     }
 }
+/* Add these new styles to replace the globe icon with logo image */
+.logo-icon img.logo-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Remove the old gradient background from the logo icon */
+.logo-icon {
+    background: none !important; /* Remove the gradient background */
+}
+
+/* Update the navbar logo icon */
+.navbar .logo-icon {
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+}
+
+/* Update the footer logo icon */
+.footer-brand .logo-icon {
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+}
+
+/* For the feature icons, keep them as they are (they should still use the globe icon) */
+.feature-icon {
+    /* This should remain unchanged, it's for feature cards, not the logo */
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
